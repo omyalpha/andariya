@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#2196f3">
+<title>AraR</title>
+<!-- Font embedding link goes here -->
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,600,500,300' rel='stylesheet' type='text/css'>
+
+<!-- CSS link goes here -->
+<link rel="stylesheet" href="css/framework7.material.min.css">
+<link rel="stylesheet" href="css/framework7.material.colors.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/material-icons.css">
+<link rel="stylesheet" href="css/swipebox.min.css">
+<link rel="stylesheet" href="css/maxframes.css">
+</head>
+<body class="theme-teal">
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal sidebar">
+  <div class="view">
+    <div class=" ">
+      <div data-page="panel-left" class="sidemenu leftmenusmall gradient">
+        <div class="item-content userprofile">
+                <div class="item-media"><img src="img/logo.png" width="44"/></div>
+        </div>
+        <div class="clear"></div>
+        <div class="list-block accordion-list">
+              <ul class="menu">
+                  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">home</i><span>Home</span></div></a></li> 
+                  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">add box</i><span>Arts & Culture</span></div></a></li> 
+                  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">add box</i><span>Women</span></div></a></li>  
+                  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">add box</i><span>In-Depth</span></div></a></li>
+                  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">add box</i><span>Commentary</span></div></a></li>
+                  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">add box</i><span>Tech</span></div></a></li>
+                  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">add box</i><span>Magazine</span></div></a></li>
+                  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">flag</i><span>النسخة العربية</span></div></a></li>
+				  <li><a href="#" class="item-link close-panel item-content "><div class="itemmeniinner"><i class="icon material-icons">share</i><span>Share</span></div></a></li>
+                  
+              </ul>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="panel panel-right panel-reveal sidebar">
+  <div class="view">
+    <div class=" ">
+      <div data-page="panel-right" class="sidemenu leftmenusmall gradient">
+        <div class="page-content">
+            <div class="inputs-list content-block contactform" >
+                    <h2 class="maintitle  center">Contact us</h2>
+                    <p class="center" >We will be back on your provided email address</p>
+                    <form id="contact-form" method="post" action="contactform/contact.php" role="form">
+                        <div class="alertmessage"></div>
+                        <div class="list-block inputs-list">
+                            <ul>
+                              <li>
+                                <div class="item-content">
+                                  <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                  <div class="item-inner">
+                                    <div class="item-title floating-label">First Name</div>
+                                    <div class="item-input">
+                                      <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="item-content">
+                                  <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                  <div class="item-inner">
+                                    <div class="item-title floating-label">Last Name</div>
+                                    <div class="item-input">
+                                      <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Lastname is required.">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="item-content">
+                                  <div class="item-media"><i class="icon icon-form-email"></i></div>
+                                  <div class="item-inner">
+                                    <div class="item-title floating-label">E-mail</div>
+                                    <div class="item-input">
+                                      <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="item-content">
+                                  <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                                  <div class="item-inner">
+                                    <div class="item-title floating-label">Phone</div>
+                                    <div class="item-input">
+                                      <input id="form_phone" type="tel" name="phone" class="form-control">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="align-top">
+                                <div class="item-content">
+                                  <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                                  <div class="item-inner">
+                                    <div class="item-title floating-label">Message/Queries</div>
+                                    <div class="item-input">
+                                      <textarea id="form_message" name="message" class="form-control resizable"  rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="content-block col-100"> 
+                            <input type="submit" class="button button-fill" value="Send message">
+                        </div>
+                </form> 
+           
+              </div>
+              
+            <div class="content-block socialblock">
+                <h2 class="center">We are at social</h2>
+                <p class="center">Get connected with us on social</p>
+                <ul class="socials">
+                    <li><a href="" class="fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" class="tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="" class="pin"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+         
+        </div>
+         <div class="row no-gutter ">
+             <div class="content-block col-100">
+                <a href="contactus.html" class=" button  color2  bigbtn col-100 close-panel">Locate Us</a>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+<div class="views pageview" >
+  <div class="view view-main">
+    <div class="pages">
+      <div data-page="index" class="page hide-bars-on-scroll">
+	  <div class="navbar ">
+		<div class="navbar-inner">
+			<div class="left sliding"><a href="#" data-panel="left" class="open-panel link icon-only"><i class="icon material-icons">reorder</i></a></div>
+			<div class="center ">Adariya</div>
+			<div class="right sliding"><a href="#"  data-panel="right" class="open-panel link icon-only"><i class="icon material-icons">email</i></a></div>
+		</div>
+	  </div>
+        <div class="page-content hide-bars-on-scroll">
+            <div data-pagination=".swiper-pagination" data-paginationHide="true" class="swiper-container largebanner shop swiper-init">
+			  <div class="swiper-pagination"></div>
+			  <div class="swiper-wrapper">
+				<div class="swiper-slide">
+				  <div class="textblock">
+					<h5><span class="badge bg-green">Women</span></h5>
+					<h2 class="maintitle col-100  ">In Praise of the Chiffon Top</h2>
+					<a href="#" class="button button-fill white">read More...</a> </div>
+					<img src="img/1.jpg" alt=""> </div>
+				<div class="swiper-slide">
+				  <div class="textblock">
+					<h5><span class="badge bg-green">Environment</span></h5>
+					<h2 class="maintitle col-100 ">Fatima’s Children</h2>
+					<a href="#" class="button button-fill white" >read More...</a> </div>
+				  <img src="img/2.jpg" alt=""> </div>
+				<div class="swiper-slide">
+				  <div class="textblock">
+					<h5><span class="badge bg-green">Arts & Culture</span></h5>
+					<h2 class="maintitle col-100 ">Climate Change in Sudan: Problems & Solutions</h2>
+					<a href="#" class="button button-fill white">read More...</a> </div>
+				  <img src="img/4.jpg" alt=""> </div>
+			  </div>
+			</div>
+			<article>
+      <div class="list-block media-list">
+        <img class="article" src="img/1.jpg">
+        <div class="content-block"><h2> In Praise of the Chiffon Top </h2>
+        <p > Aenean ligula ipsum, convallis sed mattis at, ullamcorper vitae leo. Nulla gravida eros ac auctor tempor. Nunc id diam ullamcorper, egestas ante lacinia, interdum quam. </p>
+        <a class="button " href="#">Read more</a></div>
+        <div class="separator"></div>
+      </div>
+    </article>
+	<article>
+      <div class="list-block media-list">
+        <img class="article" src="img/2.jpg">
+        <div class="content-block"><h2> Fatima’s Children </h2>
+        <p > Aenean ligula ipsum, convallis sed mattis at, ullamcorper vitae leo. Nulla gravida eros ac auctor tempor. Nunc id diam ullamcorper, egestas ante lacinia, interdum quam. </p>
+        <a class="button " href="#">Read more</a></div>
+        <div class="separator"></div>
+      </div>
+    </article>
+	<article>
+      <div class="list-block media-list">
+        <img class="article" src="img/4.jpg">
+        <div class="content-block"><h2> Climate Change in Sudan: Problems & Solutions</h2>
+        <p > Aenean ligula ipsum, convallis sed mattis at, ullamcorper vitae leo. Nulla gravida eros ac auctor tempor. Nunc id diam ullamcorper, egestas ante lacinia, interdum quam. </p>
+        <a class="button " href="#">Read more</a></div>
+        <div class="separator"></div>
+      </div>
+    </article>
+	
+        </div>
+		<div class="speed-dial">
+				 <a href="#" class="floating-button">
+				  <!-- First icon is visible when Speed Dial actions are closed -->
+				  <i class="icon icon-plus"></i>
+				  <!-- Second icon is visible when Speed Dial actions are opened -->
+				  <i class="icon icon-close"></i>
+				</a>
+					
+				
+				<div class="speed-dial-buttons">
+					<a href="todoadd.html" class="color-green" ><i class="fa fa-plus-square"></i></a>
+					<a href="#" class="color-pink"> <i class="fa fa-heart"></i> </a>
+					<a href="#" class="color-orange">        <i class="fa fa-envelope"></i></a>
+				</div>
+			  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- JS link goes here --> 
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<script type="text/javascript" src="js/jquery.swipebox.js"></script> 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="contactform/validator.js"></script>
+<script type="text/javascript" src="contactform/contact.js"></script>
+<script type="text/javascript" src="js/maxframes.js"></script>
+</body>
+</html>
